@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaListener {
 
-    @org.springframework.kafka.annotation.KafkaListener(topics = "kafka",groupId = "groupId")
+    @org.springframework.kafka.annotation.KafkaListener(topics = "kafka",groupId = "groupId1")
     public void listener(User user) {
         System.out.println("****************************"+user);
     }

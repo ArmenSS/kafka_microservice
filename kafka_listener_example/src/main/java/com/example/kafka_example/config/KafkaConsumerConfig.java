@@ -27,7 +27,7 @@ public class KafkaConsumerConfig {
           "localhost:9092");
         props.put(
           ConsumerConfig.GROUP_ID_CONFIG, 
-          "groupId");
+          "groupId1");
         return new DefaultKafkaConsumerFactory<>(props, new StringDeserializer(),
                 new JsonDeserializer<>(User.class));
     }
